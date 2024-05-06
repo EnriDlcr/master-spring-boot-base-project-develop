@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: master-spring-boot-base-project
+logging:
+  level:
+    root: DEBUG
+#definimos el puerto donde se reciben los request
+server:
+  port: 8081
+#habilitamos  endpoint de Health Actuator y lo exponemos
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
